@@ -1,7 +1,6 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
 
-
 /* Base */
 
 * {
@@ -17,7 +16,6 @@ html, body {
     line-height: 1.7;
     overflow-x: hidden;
 }
-
 
 /* Default */
 
@@ -51,12 +49,9 @@ h4 {
 /* Utils */
 
 .btn {
-    display: inline-block;
-    background: #fff;
-    color: #333;
     height: 46px;
     min-width: 136px;
-    padding: 20px 32px;
+    padding: 0 32px;
     border: none;
     font-size: 14px;
     font-weight: 600;
@@ -64,9 +59,7 @@ h4 {
     letter-spacing: 1px;
     cursor: pointer;
     text-align: center;
-    text-transform: uppercase;
     border-radius: 4px;
-    cursor: pointer;
 }
 
 .btn-cta:hover {
@@ -98,31 +91,26 @@ h4 {
 /* Header */
 
 .header {
-    height: 530px;
-    background: url(../img/header.jpg) no-repeat center center / cover;
+  height: 530px;
+  background: url(../img/header.jpg) no-repeat center center / cover;
 }
 
-/* Nav */
-
 .header nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 40px;
-    z-index: 2;
-    position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  z-index: 2;
+  position: relative;
 }
 
 .header nav .login-btn {
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 23px 0 17px;
-    margin: 4px 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .header .logo {
@@ -131,21 +119,21 @@ h4 {
 }
 
 .header .header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .header .header-text-1 {
-    font-size: 22px;
-    font-weight: bold;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .header .header-text-2 {
-    font-size: 18px;
-    margin: 25px 0;
+  font-size: 18px;
+  margin: 25px 0;
 }
 
 .header::after {
@@ -164,7 +152,29 @@ h4 {
   );
 }
 
+/* Sub Header */
+.sub-header {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  gap: 40px;
+  align-items: center;
+  padding: 30px 40px;
+  background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3640 49.72%,
+    #08141f 100%
+  );
+}
 
+.sub-header > div:last-of-type {
+  justify-self: end;
+  align-self: end;
+}
+
+.sub-header > div:last-of-type .sub-link {
+  text-align: center;
+}
 
 
 
